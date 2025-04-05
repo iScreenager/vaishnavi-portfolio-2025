@@ -2,10 +2,10 @@ import { Download, Heart, Mail } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import img from "../assets/img.png";
-import RESUME from "../assets/RESUME.pdf";
+import Vaihsnavi_Rastogi_Resume from "../assets/Vaihsnavi_Rastogi_Resume.pdf";
 import { useState } from "react";
 
-export const Hero = () => {
+export const DashBoard = () => {
   const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
@@ -71,7 +71,7 @@ export const Hero = () => {
             onClick={handleDownload}>
             <a
               className="flex gap-2 items-center justify-center"
-              href={RESUME}
+              href={Vaihsnavi_Rastogi_Resume}
               download="Vaihsnavi_Rastogi_Resume">
               <Download size={18} />
               {downloaded ? "Downloaded" : "Download Resume"}

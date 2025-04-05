@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { NavBar } from "@/components/NavBar";
 import { Loader } from "@/components/Loader";
-import { Hero } from "@/components/Hero";
+import { DashBoard} from "@/components/DashBoard";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +24,7 @@ export const Index = () => {
           <>
             <NavBar />
             <main className="overflow-x-hidden">
-              <Hero />
+              <DashBoard />
             </main>
           </>
         )}
