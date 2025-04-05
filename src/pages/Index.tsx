@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { NavBar } from "@/components/NavBar";
 import { Loader } from "@/components/Loader";
-import { DashBoard} from "@/components/DashBoard";
+import { DashBoard } from "@/components/DashBoard";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
