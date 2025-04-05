@@ -1,6 +1,6 @@
 import React from "../assets/icons/React.svg";
 import TypeScript from "../assets/icons/TypeScript.svg";
-import Javascript from "../assets/icons/JavaScript.svg";
+import Javascript from "../assets/icons/Javascript.svg";
 import Redux from "../assets/icons/Redux.svg";
 import HTML from "../assets/icons/HTML.svg";
 import CSS from "../assets/icons/CSS.svg";
