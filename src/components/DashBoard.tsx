@@ -1,7 +1,7 @@
 import { Download, Heart, Mail } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import img from "../assets/img.png";
-import Vaishnavi_rastogi_Resume from "../assets/Vaishnavi_rastogi_Resume.pdf";
+import Vaishnavi_rastogi_Resume from "../../public/Vaishnavi_rastogi_Resume.pdf" ;
 
 import { useState } from "react";
 

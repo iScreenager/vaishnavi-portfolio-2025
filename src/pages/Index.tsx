@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { NavBar } from "@/components/NavBar";
 import { Loader } from "@/components/Loader";
 import { DashBoard } from "@/components/DashBoard";
+import { TechStack } from "@/components/TechStacks";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ export const Index = () => {
             <NavBar />
             <main className="overflow-x-hidden">
               <DashBoard />
+              <TechStack />
             </main>
           </>
         )}
