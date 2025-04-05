@@ -61,14 +61,9 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-8px)" },
         },
-        flutter: {
-          from: { transform: "rotateX(0deg)" },
-          to: { transform: "rotateX(80deg)" },
-        },
       },
       animation: {
         float: "float 3s ease-in-out infinite",
-        flutter: "flutter 150ms alternate infinite",
       },
       transformOrigin: {
         "center-center": "center center",
