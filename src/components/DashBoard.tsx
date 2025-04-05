@@ -1,8 +1,8 @@
 import { Download, Heart, Mail } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
 import img from "../assets/img.png";
-import Vaihsnavi_Rastogi_Resume from "../assets/Vaihsnavi_Rastogi_Resume.pdf";
+import Vaishnavi_rastogi_Resume from "../assets/Vaishnavi_rastogi_Resume.pdf";
+
 import { useState } from "react";
 
 export const DashBoard = () => {
@@ -71,7 +71,7 @@ export const DashBoard = () => {
             onClick={handleDownload}>
             <a
               className="flex gap-2 items-center justify-center"
-              href={Vaihsnavi_Rastogi_Resume}
+              href={Vaishnavi_rastogi_Resume}
               download="Vaihsnavi_Rastogi_Resume">
               <Download size={18} />
               {downloaded ? "Downloaded" : "Download Resume"}
