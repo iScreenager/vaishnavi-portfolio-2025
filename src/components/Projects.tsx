@@ -23,7 +23,7 @@ export const Projects = () => {
       logo: "AI",
       img: InterviewAI,
       overlayText:
-        " InterviewAI is an AI-powered platform that generates personalized mock interview questions from resumes. It analyzes user responses and provides smart feedback to help improve performance.TaskBuddy is a task management app designe to help users efficiently organize, track, and manage daily to-dos with features like authentication, drag-and-drop, filters, and a clean, responsive UI.",
+        " InterviewAI is an AI-powered platform that generates personalized mock interview questions from resumes. It analyzes user responses and provides smart feedback to help improve performance.",
       url: "https://interview-ai-weld.vercel.app/",
       github: "https://github.com/iScreenager/interviewai",
       likes: 287,
