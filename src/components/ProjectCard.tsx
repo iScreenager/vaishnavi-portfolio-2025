@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 
 type ProjectType = {
-  name:string;
+  name: string;
   logo: string;
   img: string;
   overlayText: string;
@@ -40,7 +40,6 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
             <p className="text-base font-semibold font-handwritten text-black dark:text-gray-300">
               {project.name}
             </p>
-            
           </div>
         </div>
         <button className="text-gray-600 dark:text-gray-300 text-lg">
@@ -49,20 +48,24 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
       </div>
 
       <div className="relative w-full flex justify-center items-center overflow-hidden bg-white h-80 cursor-pointer">
-  <img
-    src={project?.img}
-    alt={`${project.name} Project`}
-    className={`max-w-full h-fit object-contain transition-transform duration-700 ${
-      isHovered ? "scale-105" : "scale-100"
-    }`}
-  />
-  <div
-    className={`absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black/60 via-black/40 to-transparent text-white p-4 flex items-end transition-all duration-500 ${
-      isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-    }`}>
-          <p className="text-sm font-bubbly font-semibold">{ project.overlayText}</p>
-  </div>
-</div>
+        <img
+          src={project?.img}
+          alt={`${project.name} Project`}
+          className={`max-w-full h-fit object-contain transition-transform duration-700 ${
+            isHovered ? "scale-105" : "scale-100"
+          }`}
+        />
+        <div
+          className={`absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black/60 via-black/40 to-transparent text-white p-4 flex items-end transition-all duration-500 ${
+            isHovered
+              ? "translate-y-0 opacity-100"
+              : "translate-y-full opacity-0"
+          }`}>
+          <p className="text-sm font-bubbly font-semibold">
+            {project.overlayText}
+          </p>
+        </div>
+      </div>
 
       <div className="px-4 pt-4 pb-3">
         <div className="flex items-center justify-between text-xl text-gray-700 dark:text-gray-300">
@@ -102,7 +105,9 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
 
         <div className="mt-4 flex flex-wrap gap-2 text-xs text-black dark:text-white font-medium mb-3">
           {project.techStack.map((stack) => (
-            <span className="dark:bg-pink-400 bg-pink-200 px-2 py-1 rounded-full">
+            <span
+              key={stack}
+              className="dark:bg-pink-400 bg-pink-200 px-2 py-1 rounded-full">
               {stack}
             </span>
           ))}

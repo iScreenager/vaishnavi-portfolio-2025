@@ -5,6 +5,7 @@ import { Loader } from "@/components/Loader";
 import { DashBoard } from "@/components/DashBoard";
 import { TechStack } from "@/components/TechStacks";
 import { Projects } from "@/components/Projects";
+import { Footer } from "@/components/Footer";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ export const Index = () => {
               <DashBoard />
               <TechStack />
               <Projects />
+              <Footer />
             </main>
           </>
         )}

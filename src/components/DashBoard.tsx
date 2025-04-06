@@ -67,9 +67,9 @@ export const DashBoard = () => {
           a focus on clean code and thoughtful design.
         </p>
 
-        <div className=" flex flex-col sm:flex-row justify-center md:justify-start  gap-4 mt-5">
+        <div className=" flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-5">
           <button
-            className=" px-4 py-2 border border-pink-300 bg-pink-300 shadow-md hover:bg-pink-400 transition-all font-bold "
+            className="px-4 py-2 border border-pink-300 bg-pink-300 shadow-md hover:bg-pink-400 transition-all font-bold text-sm lg:text-lg "
             onClick={handleDownload}>
             <a
               className="flex gap-2 items-center justify-center"
