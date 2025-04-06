@@ -68,6 +68,9 @@ export default {
       transformOrigin: {
         "center-center": "center center",
       },
+      extend: {
+        scrollBehavior: ["responsive"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

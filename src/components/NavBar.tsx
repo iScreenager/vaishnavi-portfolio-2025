@@ -26,6 +26,7 @@ export const NavBar = () => {
           {seactions.map((section) => (
             <a
               key={section}
+              href={`#${section}`}
               onClick={() => setActiveTab(section)}
               onMouseEnter={() => setOnHover(section)}
               onMouseLeave={() => setOnHover(null)}
@@ -74,6 +75,7 @@ export const NavBar = () => {
             {seactions.map((section) => (
               <a
                 key={section}
+                href={`#${section}`}
                 onClick={() => setActiveTab(section)}
                 onMouseEnter={() => setOnHover(section)}
                 onMouseLeave={() => setOnHover(null)}

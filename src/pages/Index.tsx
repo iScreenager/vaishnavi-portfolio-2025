@@ -4,6 +4,7 @@ import { NavBar } from "@/components/NavBar";
 import { Loader } from "@/components/Loader";
 import { DashBoard } from "@/components/DashBoard";
 import { TechStack } from "@/components/TechStacks";
+import { Projects } from "@/components/Projects";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +28,7 @@ export const Index = () => {
             <main className="overflow-x-hidden">
               <DashBoard />
               <TechStack />
+              <Projects />
             </main>
           </>
         )}

@@ -1,7 +1,7 @@
 import { Download, Heart, Mail } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import img from "../assets/img.png";
-import Vaishnavi_rastogi_Resume from "../../public/Vaishnavi_rastogi_Resume.pdf" ;
+import Vaishnavi_rastogi_Resume from "../../public/Vaishnavi_rastogi_Resume.pdf";
 
 import { useState } from "react";
 
@@ -27,7 +27,9 @@ export const DashBoard = () => {
     },
   ];
   return (
-    <section className="relative bg-pink-50 dark:bg-gray-700 py-10 lg:py-20 px-6 md:px-16 lg:px-48 flex flex-col md:flex-row gap-10 md:gap-20 items-center lg:items-start">
+    <section
+      id="about"
+      className="relative bg-pink-50 dark:bg-gray-700 py-10 lg:py-20 px-6 md:px-16 lg:px-48 flex flex-col md:flex-row gap-10 md:gap-20 items-center lg:items-start">
       <div className="flex-shrink-0 relative mb-3">
         <div>
           <img

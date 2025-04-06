@@ -28,14 +28,7 @@ export const TechStack = () => {
       icon: Redux,
       label: "Redux",
     },
-    {
-      icon: HTML,
-      label: "HTML",
-    },
-    {
-      icon: CSS,
-      label: "CSS",
-    },
+
     {
       icon: TailwindCSS,
       label: "Tailwind CSS",
@@ -44,6 +37,15 @@ export const TechStack = () => {
       icon: MaterialUI,
       label: "MaterialUI",
     },
+    {
+      icon: CSS,
+      label: "CSS",
+    },
+    {
+      icon: HTML,
+      label: "HTML",
+    },
+
     {
       icon: Jest,
       label: "Jest",
@@ -59,7 +61,9 @@ export const TechStack = () => {
     },
   ];
   return (
-    <section className="bg-pink-50 dark:bg-gray-700 flex flex-col items-center gap-14 px-4 md:px-8 py-6">
+    <section
+      id="skills"
+      className="bg-pink-50 dark:bg-gray-700 flex flex-col items-center gap-14 px-4 md:px-8 py-6">
       <h4 className="text-4xl font-handwritten text-center text-pink-400">
         Tech stack
       </h4>
@@ -68,7 +72,7 @@ export const TechStack = () => {
           <div key={index} className="flex flex-col items-center space-y-2 ">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 p-[3px] md:p-[4px] cursor-pointer">
               <div className="w-full h-full rounded-full bg-slate-200 dark:bg-rose-50  flex items-center justify-center">
-                <img src={highlight.icon} className="w-8 h-8" />
+                <img src={highlight.icon} className="w-6 h-5 md:w-8 md:h-8" />
               </div>
             </div>
             <p className="text-xs sm:text-sm font-bold text-center">
