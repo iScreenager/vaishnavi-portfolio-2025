@@ -26,12 +26,13 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
 
   return (
     <div
-      className="bg-gray-100 dark:bg-gray-800 rounded-[24px] overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 w-full max-w-[450px] mx-auto "
+      className="bg-gray-100 dark:bg-gray-800 rounded-[24px] overflow-hidden border border-gray-300 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 w-full max-w-[450px] mx-auto
+     "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
       <div className="flex items-center justify-between p-4">
-        <div className="flex items-center ">
-          <div className="rounded-full w-10 h-10 bg-slate-900 dark:bg-white  flex items-center justify-center p-[2px]">
+        <div className="flex items-center">
+          <div className="rounded-full w-10 h-10 bg-slate-900 dark:bg-white flex items-center justify-center p-[2px]">
             <div className="w-full h-full rounded-full bg-gray-600 flex items-center justify-center font-bold text-sm text-red-300 font-handwritten">
               {project.logo}
             </div>
@@ -49,7 +50,7 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
 
       <div className="relative w-full flex justify-center items-center overflow-hidden bg-white h-80 cursor-pointer">
         <img
-          src={project?.img}
+          src={project.img}
           alt={`${project.name} Project`}
           className={`max-w-full h-fit object-contain transition-transform duration-700 ${
             isHovered ? "scale-105" : "scale-100"
@@ -61,9 +62,25 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
               ? "translate-y-0 opacity-100"
               : "translate-y-full opacity-0"
           }`}>
-          <p className="text-sm font-bubbly font-semibold">
-            {project.overlayText}
-          </p>
+          <div className="text-sm font-bubbly font-semibold">
+            <p>{project.overlayText}</p>
+            <div className="flex gap-3 mt-2">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition rounded-full p-2 bg-white text-black hover:bg-black hover:text-white">
+                <FaGithub className="text-sm" />
+              </a>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition rounded-full p-2 bg-white text-black hover:bg-black hover:text-white">
+                <FaPaperclip className="text-sm" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

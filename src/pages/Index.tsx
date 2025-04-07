@@ -6,6 +6,8 @@ import { DashBoard } from "@/components/DashBoard";
 import { TechStack } from "@/components/TechStacks";
 import { Projects } from "@/components/Projects";
 import { Footer } from "@/components/Footer";
+import { Experience } from "@/components/Experience";
+import { Contact } from "@/components/Contact";
 
 export const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +31,9 @@ export const Index = () => {
             <main className="overflow-x-hidden">
               <DashBoard />
               <TechStack />
+              <Experience />
               <Projects />
+              <Contact />
               <Footer />
             </main>
           </>
