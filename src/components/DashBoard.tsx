@@ -69,10 +69,10 @@ export const DashBoard = () => {
 
         <div className=" flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-5">
           <button
-            className="px-4 py-2 border border-pink-300 bg-pink-300 shadow-md hover:bg-pink-400 transition-all font-bold text-sm lg:text-lg "
+            className="px-4 py-2 border border-pink-300 bg-pink-300 shadow-md hover:bg-pink-400 transition-all font-bold text-sm lg:text-lg rounded-[10px]"
             onClick={handleDownload}>
             <a
-              className="flex gap-2 items-center justify-center"
+              className="flex gap-2 items-center justify-center "
               href={Vaishnavi_rastogi_Resume}
               download="Vaihsnavi_Rastogi_Resume">
               <Download size={18} />
@@ -80,7 +80,9 @@ export const DashBoard = () => {
             </a>
           </button>
 
-          <button className="bg-purple-400  text-black  hover:bg-purple-500 py-2 px-4 transition-all font-bold ">
+          <button
+            className="bg-purple-400  text-black  hover:bg-purple-500 py-2 px-4 transition-all font-bold
+          rounded-[10px] ">
             <a href="#project">View Project</a>
           </button>
         </div>
