@@ -75,7 +75,7 @@ export const TechStack = () => {
                 <img src={highlight.icon} className="w-6 h-5 md:w-8 md:h-8" />
               </div>
             </div>
-            <p className="text-xs sm:text-sm font-bold text-center">
+            <p className="text-xs sm:text-sm font-bold text-center text-black dark:text-white">
               {highlight.label}
             </p>
           </div>

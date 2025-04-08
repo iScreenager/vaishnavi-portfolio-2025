@@ -1,8 +1,6 @@
 import {
-  FaEllipsisH,
   FaGithub,
   FaPaperclip,
-  FaRegBookmark,
   FaRegComment,
   FaRegHeart,
 } from "react-icons/fa";
@@ -43,9 +41,6 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
             </p>
           </div>
         </div>
-        <button className="text-gray-600 dark:text-gray-300 text-lg">
-          <FaEllipsisH />
-        </button>
       </div>
 
       <div className="relative w-full flex justify-center items-center overflow-hidden bg-white h-80 cursor-pointer">
@@ -105,7 +100,6 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
               className="hover:text-pink-400 transition">
               <FaPaperclip />
             </a>
-            <FaRegBookmark className="cursor-pointer hover:text-pink-400 transition" />
           </div>
         </div>
 
