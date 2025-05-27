@@ -1,6 +1,7 @@
 import { ProjectCard } from "./ProjectCard";
 import TaskBuddy from "../assets/TaskBuddy.png";
 import InterviewAI from "../assets/InterviewAI.png";
+import VideoEditor from "../assets/VideoEditor.png";
 
 export const Projects = () => {
   const Projects = [
@@ -31,6 +32,19 @@ export const Projects = () => {
         " InterviewAI — your personal AI coach for mock interviews 🤖🎤 Practice. Improve. Succeed! 💼✨",
       tags: " #MockInterview #AIprep #InterviewAI",
       techStack: ["React.js", "Firebase", "Gemini AI", "TypeScript"],
+    },
+    {
+      name: "Video Caption Editor",
+      logo: "VCE",
+      img: VideoEditor,
+      overlayText:
+        " Video Caption Editor is a tool designed to simplify the process of editing, syncing, and managing video subtitles with real-time preview.",
+      url: "https://video-caption-editor-blush.vercel.app/",
+      github: "https://github.com/iScreenager/video_caption_editor",
+      likes: 98,
+      caption: " Video Caption Editor — because timing is everything 🎬🕒",
+      tags: " #CaptionEditor #Subtitles #VideoTools",
+      techStack: ["React.js", "TypeScript","Web API"],
     },
   ];
   return (
