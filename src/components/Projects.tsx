@@ -44,7 +44,7 @@ export const Projects = () => {
       likes: 98,
       caption: " Video Caption Editor — because timing is everything 🎬🕒",
       tags: " #CaptionEditor #Subtitles #VideoTools",
-      techStack: ["React.js", "TypeScript","Web API"],
+      techStack: ["React.js", "TypeScript", "Web API"],
     },
   ];
   return (
@@ -54,7 +54,7 @@ export const Projects = () => {
       <h4 className="text-4xl font-handwritten text-center text-pink-400">
         Projects
       </h4>
-      <div className="flex gap-10 flex-wrap">
+      <div className="flex flex-wrap justify-between gap-2">
         {Projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
