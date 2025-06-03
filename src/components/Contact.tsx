@@ -28,7 +28,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-4 md:px-8 py-12 bg-pink-50 dark:bg-gray-700 transition-all duration-500">
+      className=" min-h-screen flex flex-col items-center justify-center px-4 md:px-8 py-12 transition-all duration-500">
       <h4 className="text-5xl font-bold font-handwritten text-pink-400 text-center mb-12 drop-shadow-lg animate-bounce-slow">
         Contact Me
       </h4>

@@ -21,7 +21,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="bg-pink-50 dark:bg-gray-700 flex flex-col items-center px-4 md:px-8 py-6">
+      className="flex flex-col items-center px-4 md:px-8 py-6">
       <div className="text-center mb-10 ">
         <h2 className="text-3xl sm:text-4xl font-bold text-pink-400 font-handwritten mb-2">
           My Experience

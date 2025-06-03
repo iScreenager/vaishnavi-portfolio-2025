@@ -50,7 +50,7 @@ export const Projects = () => {
   return (
     <section
       id="project"
-      className="bg-pink-50 dark:bg-gray-700 flex flex-col items-center gap-14 px-4 md:px-8 py-6">
+      className=" flex flex-col items-center gap-14 px-4 md:px-8 py-6">
       <h4 className="text-4xl font-handwritten text-center text-pink-400">
         Projects
       </h4>
