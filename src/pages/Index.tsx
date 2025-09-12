@@ -27,8 +27,8 @@ export const Index = () => {
         {isLoading ? (
           <Loader />
         ) : (
-            <>
-              <Background/>
+          <>
+            <Background/>
             <NavBar />
             <main className="overflow-x-hidden">
               <DashBoard />
