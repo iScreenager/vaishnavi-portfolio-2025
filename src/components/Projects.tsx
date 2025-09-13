@@ -1,7 +1,7 @@
 import TaskBuddy from "../assets/TaskBuddy.png";
 import InterviewAI from "../assets/InterviewAI.png";
 import VideoEditor from "../assets/VideoEditor.png";
-import SupTask from "../assets/img.png";
+import GredyTodo from "../assets/GreedyTodo.png";
 import { useState } from "react";
 import {
   FaGithub,
@@ -51,11 +51,11 @@ export const Projects = () => {
     {
       id: 1,
       name: "GreedyTodo",
-      img: SupTask,
+      img: GredyTodo,
       description:
         "Full-stack task management platform with custom REST APIs, JWT authentication, real-time WebSocket updates, PWA push notifications, and Docker containerization.",
-      url: "https://greedytodo-demo.vercel.app/",
-      github: "https://github.com/iScreenager/greedytodo",
+      url: "https://greedy-todo-frontend.vercel.app/",
+      github: "https://github.com/iScreenager/greedy-todo-frontend",
       techStack: [
         "Next.js",
         "TypeScript",
@@ -202,8 +202,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative"
-    >
+      className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold font-handwritten bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent pb-4">
@@ -237,8 +236,7 @@ export const Projects = () => {
                     isActive
                       ? "bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg"
                       : "bg-white/10 dark:bg-gray-800/10 text-gray-600 dark:text-gray-300 border border-white/20 dark:border-gray-700/20 hover:bg-pink-500/10 dark:hover:bg-pink-500/10 hover:border-pink-500/30"
-                  }`}
-                >
+                  }`}>
                   <Icon className="w-4 h-4" />
                   <span>{category.label}</span>
                   <span
@@ -246,8 +244,7 @@ export const Projects = () => {
                       isActive
                         ? "bg-white/20 text-white"
                         : "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
-                    }`}
-                  >
+                    }`}>
                     {projectCount}
                   </span>
                 </button>
@@ -270,8 +267,7 @@ export const Projects = () => {
                       : ""
                   } overflow-hidden w-full md:h-[260px] flex flex-col md:flex-row`}
                   onMouseEnter={() => setHoveredProject(index)}
-                  onMouseLeave={() => setHoveredProject(null)}
-                >
+                  onMouseLeave={() => setHoveredProject(null)}>
                   <div className="relative w-full md:w-48 h-48 md:h-full overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-t-none flex-shrink-0">
                     <img
                       src={project.img}
@@ -286,8 +282,7 @@ export const Projects = () => {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 bg-gradient-to-r from-gray-800/90 to-gray-900/90 backdrop-blur-sm hover:from-gray-700 hover:to-gray-800 text-white rounded-full text-xs font-semibold transition-all duration-300 hover:scale-105 border border-gray-600/50 hover:border-gray-500 shadow-2xl hover:shadow-3xl"
-                        >
+                          className="flex-1 flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 bg-gradient-to-r from-gray-800/90 to-gray-900/90 backdrop-blur-sm hover:from-gray-700 hover:to-gray-800 text-white rounded-full text-xs font-semibold transition-all duration-300 hover:scale-105 border border-gray-600/50 hover:border-gray-500 shadow-2xl hover:shadow-3xl">
                           <FaGithub className="text-xs" />
                           <span className="hidden sm:inline">Code</span>
                         </a>
@@ -295,8 +290,7 @@ export const Projects = () => {
                           href={project.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 bg-gradient-to-r from-pink-500/80 to-purple-500/80 backdrop-blur-sm hover:from-pink-500 hover:to-purple-500 text-white rounded-full text-xs font-semibold transition-all duration-300 hover:scale-105 border border-pink-400/50 hover:border-pink-300 shadow-2xl hover:shadow-3xl"
-                        >
+                          className="flex-1 flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 bg-gradient-to-r from-pink-500/80 to-purple-500/80 backdrop-blur-sm hover:from-pink-500 hover:to-purple-500 text-white rounded-full text-xs font-semibold transition-all duration-300 hover:scale-105 border border-pink-400/50 hover:border-pink-300 shadow-2xl hover:shadow-3xl">
                           <FaExternalLinkAlt className="text-xs" />
                           <span className="hidden sm:inline">Demo</span>
                         </a>
@@ -326,8 +320,7 @@ export const Projects = () => {
                           return (
                             <div
                               key={techIndex}
-                              className="group/tech flex items-center gap-1 bg-gradient-to-r from-white/10 to-transparent rounded-full px-2 py-1 border border-white/20 hover:border-pink-500/40 transition-all duration-300 hover:scale-105"
-                            >
+                              className="group/tech flex items-center gap-1 bg-gradient-to-r from-white/10 to-transparent rounded-full px-2 py-1 border border-white/20 hover:border-pink-500/40 transition-all duration-300 hover:scale-105">
                               <Icon
                                 className="w-3 h-3 group-hover/tech:scale-110 transition-transform duration-300"
                                 style={{ color }}
@@ -343,8 +336,7 @@ export const Projects = () => {
                   </div>
 
                   <div
-                    className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}
-                  ></div>
+                    className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}></div>
                 </div>
               );
             })}
