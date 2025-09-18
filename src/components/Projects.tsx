@@ -1,5 +1,5 @@
 import TaskBuddy from "../assets/TaskBuddy.png";
-import InterviewAI from "../assets/InterviewAI.png";
+import InterviewAI from "../assets/InterviewAI.jpeg";
 import VideoEditor from "../assets/VideoEditor.png";
 import GredyTodo from "../assets/GreedyTodo.png";
 import { useState } from "react";
@@ -209,15 +209,14 @@ export const Projects = () => {
             My Creative Works
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-            Here's what I've been building lately - from{" "}
+            Here's what I've been building lately - from
             <span className="text-pink-500 font-semibold">React apps</span> that
-            actually work, to{" "}
+            actually work, to
             <span className="text-purple-500 font-semibold">AI tools</span> that
             solve real problems, and
             <span className="text-indigo-500 font-semibold">
-              {" "}
               web experiences
-            </span>{" "}
+            </span>
             that people actually want to use.
           </p>
         </div>
